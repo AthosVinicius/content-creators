@@ -76,8 +76,6 @@ export default function Create() {
         resolver: zodResolver(CreateScheme),
     });
 
-    console.log("PLACEHOLDER: ", careerPlaceholder);
-
     const onSubmit = (data: CreateForm) => {
         setIsLoading(true);
 
