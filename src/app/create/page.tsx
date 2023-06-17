@@ -186,7 +186,7 @@ export default function Create() {
                                         {...register("name")}
                                         name="name"
                                         id="name"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="Nome"
                                     />
                                     {errors.name && <small>{errors?.name?.message}</small>}
@@ -200,7 +200,7 @@ export default function Create() {
                                         {...register("default_user")}
                                         name="default_user"
                                         id="default_user"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="Apelido (ou @ principal)"
                                     />
                                 </div>
@@ -214,7 +214,7 @@ export default function Create() {
                                     {...register("career")}
                                     name="career"
                                     id="career"
-                                    className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                     placeholder={careerPlaceholder}
                                 />
                             </div>
@@ -228,7 +228,7 @@ export default function Create() {
                                         {...register("instagram")}
                                         name="instagram"
                                         id="instagram"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Instagram"
                                     />
                                 </div>
@@ -241,7 +241,7 @@ export default function Create() {
                                         {...register("tiktok")}
                                         name="tiktok"
                                         id="tiktok"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Tiktok"
                                     />
                                 </div>
@@ -256,7 +256,7 @@ export default function Create() {
                                         {...register("twitter")}
                                         name="twitter"
                                         id="twitter"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Twitter"
                                     />
                                 </div>
@@ -269,7 +269,7 @@ export default function Create() {
                                         {...register("youtube")}
                                         name="youtube"
                                         id="youtube"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Youtube"
                                     />
                                 </div>
@@ -284,7 +284,7 @@ export default function Create() {
                                         {...register("facebook")}
                                         name="facebook"
                                         id="facebook"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Facebook"
                                     />
                                 </div>
@@ -298,7 +298,7 @@ export default function Create() {
                                         {...register("linkedin")}
                                         name="linkedin"
                                         id="linkedin"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Linkedin"
                                     />
                                 </div>
@@ -314,7 +314,7 @@ export default function Create() {
                                         {...register("discord")}
                                         name="discord"
                                         id="discord"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="#usuario do discord"
                                     />
                                 </div>
@@ -327,7 +327,7 @@ export default function Create() {
                                         {...register("github")}
                                         name="github"
                                         id="github"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Github"
                                     />
                                 </div>
@@ -342,7 +342,7 @@ export default function Create() {
                                         {...register("twitch")}
                                         name="twitch"
                                         id="twitch"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="@usuario do Twitch"
                                     />
                                 </div>
@@ -355,7 +355,7 @@ export default function Create() {
                                         {...register("website")}
                                         name="website"
                                         id="website"
-                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                        className="block text-gray-700 w-full rounded-md border-gray-300 pl-10 focus:border-gray-600 focus:ring-gray-600 sm:text-sm"
                                         placeholder="seusite.com.br"
                                     />
                                 </div>
