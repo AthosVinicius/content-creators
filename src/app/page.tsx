@@ -17,7 +17,7 @@ export default async function Home() {
                     <div className="space-y-12">
                         <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center">
-                                Criadores de Conteúdo Tech
+                                Criadores de Conteúdo {process.env.CREATORS_NICHE}
                             </h2>
                             <p className="text-xl text-gray-300 text-center">
                                 Se você não está na listagem abaixo, <Link href="/create">clique aqui</Link>.
@@ -34,7 +34,7 @@ export default async function Home() {
                                 </>
                             ) : (
                                 <p className="text-xl text-gray-300 text-center w-full bg-gray-800 py-5 rounded-2xl">
-                                    Não há nenhum <strong>Teh Creator</strong> cadastrado ainda.
+                                    Não há nenhum <strong>criador de conteúdo</strong> cadastrado ainda.
                                 </p>
                             )}
                         </Suspense>
