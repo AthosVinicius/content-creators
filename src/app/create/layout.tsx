@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Cadastrar Tech Creator",
+    title: "Cadastrar Criador de Conteúdo",
     description: "Desenvolvido pelo @brunofhorn",
 };
 
