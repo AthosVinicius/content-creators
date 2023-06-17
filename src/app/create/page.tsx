@@ -94,7 +94,7 @@ export default function Create() {
                     toast.error(response?.error);
                     setIsLoading(false);
                 } else {
-                    toast.success("O Tech Creator foi cadastrado com sucesso.");
+                    toast.success("O criador de conteúdo foi cadastrado com sucesso.");
                     clearErrors();
                     reset();
                     setAvatar({ base64: "", preview: "" });
@@ -213,7 +213,7 @@ export default function Create() {
                                     name="career"
                                     id="career"
                                     className="block w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                    placeholder="Carreira (Ex: Fullstack Javascript / Backend Developer)"
+                                    placeholder={process.env.CAREER_PLACEHOLDER}
                                 />
                             </div>
                             <div className="flex flex-row gap-2">

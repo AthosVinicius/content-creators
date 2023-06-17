@@ -100,7 +100,11 @@ export async function POST(request: Request) {
             return NextResponse.json({ ...newCreator }, { status: 201 });
         } else {
             return NextResponse.json(
-                { error: `Ocorreu um erro ao tentar cadastrar o Tech Creator. Creator: ${JSON.stringify(newCreator)}` },
+                {
+                    error: `Ocorreu um erro ao tentar cadastrar o criador de conteúdo. Creator: ${JSON.stringify(
+                        newCreator,
+                    )}`,
+                },
                 { status: 500 },
             );
         }
@@ -109,16 +113,19 @@ export async function POST(request: Request) {
 
         if (error instanceof Prisma.PrismaClientKnownRequestError) {
             if (error.code === "P2002") {
-                return NextResponse.json({ error: "O Tech Creator informado já está cadastrado." }, { status: 500 });
+                return NextResponse.json(
+                    { error: "O criador de conteúdo informado já está cadastrado." },
+                    { status: 500 },
+                );
             } else {
                 return NextResponse.json(
-                    { error: `Ocorreu um erro ao tentar cadastrar o Tech Creator. Erro: ${error.message}` },
+                    { error: `Ocorreu um erro ao tentar cadastrar o criador de conteúdo. Erro: ${error.message}` },
                     { status: 500 },
                 );
             }
         } else {
             return NextResponse.json(
-                { error: "Ocorreu um erro ao tentar cadastrar o Tech Creator.", errorMessage: error },
+                { error: "Ocorreu um erro ao tentar cadastrar o criador de conteúdo.", errorMessage: error },
                 { status: 500 },
             );
         }

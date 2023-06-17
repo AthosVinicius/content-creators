@@ -11,6 +11,9 @@ export async function GET(request: Request) {
         return NextResponse.json({ creators: creators }, { headers: { "Cache-Control": "max-age=0" }, status: 200 });
     } catch (error) {
         console.log("ERROr: ", error);
-        return NextResponse.json({ error: "Ocorreu um erro ao tentar listar os tech creators." }, { status: 500 });
+        return NextResponse.json(
+            { error: "Ocorreu um erro ao tentar listar os criadores de conteúdo." },
+            { status: 500 },
+        );
     }
 }
