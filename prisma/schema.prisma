@@ -6,14 +6,13 @@ generator client {
 }
 
 datasource db {
-    provider     = "mysql"
-    url          = env("DATABASE_URL")
-    relationMode = "prisma"
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
 }
 
 model Creator {
     id           String @id @default(uuid())
-    avatar       String @db.LongText
+    avatar       String
     name         String
     default_user String
     career       String
