@@ -142,15 +142,15 @@ export const ModalDropzone = ({ open, setOpen, onConfirm, onResetAvatar }: IModa
                                                             >
                                                                 <input {...getInputProps()} />
                                                                 <Save width={40} height={40} />
-                                                                <p className="m-0 text-base mt-1">
+                                                                <p className="m-0 text-base text-gray-600 mt-1">
                                                                     <strong>Arraste e Solte</strong> aqui ou
                                                                     <br />
                                                                     carregue do seu <strong>Computador</strong>
                                                                 </p>
-                                                                <p className="m-0 text-base">
+                                                                <p className="m-0 text-base text-gray-600">
                                                                     Altura e largura miníma:
                                                                 </p>
-                                                                <p className="m-0 text-base">
+                                                                <p className="m-0 text-base text-gray-600">
                                                                     500 x 500 px - .jpg ou .png
                                                                 </p>
                                                             </div>

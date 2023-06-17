@@ -149,7 +149,7 @@ export default function Create() {
                     <div className="bg-white py-4 px-4 shadow sm:rounded-lg sm:px-10">
                         <Link href="/" className="absolute flex flex-row gap-2">
                             <Arrow width={15} height={15} />
-                            <span className="text-xs font-semibold">Voltar</span>
+                            <span className="text-xs font-semibold text-gray-600">Voltar</span>
                         </Link>
                         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex justify-center items-center">
