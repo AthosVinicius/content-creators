@@ -51,7 +51,8 @@ export default function Create() {
     const [avatar, setAvatar] = useState({ preview: "", base64: "" });
     const [modal, setModal] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
-    const careerPlaceholder = process.env.CAREER_PLACEHOLDER ?? "";
+    const careerPlaceholder =
+        process.env.CAREER_PLACEHOLDER ?? "Carreira (Ex: Estudante / Programador / Bibliotecário)";
     const {
         register,
         handleSubmit,
