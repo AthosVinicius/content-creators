@@ -367,7 +367,7 @@ export default function Create() {
                                         isLoading ? "bg-gray-500 hover:bg-gray-700" : "bg-primary hover:bg-indigo-700"
                                     } py-2 px-4 text-sm font-medium text-white shadow-sm focus:outline-none focus:ring-2`}
                                 >
-                                    {isLoading ? "Carregando..." : "Cadastrar Tech Creator"}
+                                    {isLoading ? "Carregando..." : "Cadastrar Criador de Conteúdo"}
                                 </button>
                             </div>
                         </form>
