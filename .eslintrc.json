@@ -1,0 +1,35 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "next",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["react", "react-hooks", "@typescript-eslint", "eslint-plugin-import-helpers", "prettier"],
+    "settings": {
+        "import/resolver": {
+            "typescript": {},
+            "node": {
+                "paths": ["."],
+                "extensions": [".ts", ".tsx", ".js", ".jsx"]
+            }
+        }
+    },
+    "rules": {
+        "react/react-in-jsx-scope": ["off"],
+        "@next/next/no-page-custom-font": ["off"],
+        "import-helpers/order-imports": [
+            "error",
+            {
+                "newlinesBetween": "always",
+                "groups": ["module", "/^react/", "/^@\//", ["parent", "sibling", "index"]],
+                "alphabetize": {
+                    "order": "asc",
+                    "ignoreCase": true
+                }
+            }
+        ]
+    }
+}
