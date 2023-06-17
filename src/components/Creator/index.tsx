@@ -24,12 +24,16 @@ export const Creator = (creator: ICreatorResponse) => {
                 <dl className="mt-1 flex flex-col">
                     <dt className="sr-only">Career</dt>
                     <dd className="text-sm text-gray-500">{creator.career}</dd>
-                    <dt className="sr-only">Default User</dt>
-                    <dd className="mt-3">
-                        <span className="rounded-full bg-[#111927] px-2 py-1 text-xs font-medium text-gray-300">
-                            {creator.default_user}
-                        </span>
-                    </dd>
+                    {creator.default_user && (
+                        <>
+                            <dt className="sr-only">Default User</dt>
+                            <dd className="mt-3">
+                                <span className="rounded-full bg-[#111927] px-2 py-1 text-xs font-medium text-gray-300">
+                                    {creator.default_user}
+                                </span>
+                            </dd>
+                        </>
+                    )}
                 </dl>
                 {creator.website && (
                     <Link href={creator.website} target="_blank" className="text-xs mt-3">
