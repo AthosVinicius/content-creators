@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { User } from "@/icons";
 import { ICreatorResponse } from "@/interfaces/response";
 
 import { SocialItem } from "../SocialItem";
@@ -11,15 +12,21 @@ export const Creator = (creator: ICreatorResponse) => {
     return (
         <div className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
             <div className="flex flex-1 flex-col p-6">
-                <Image
-                    unoptimized
-                    className="mx-auto h-32 w-32 flex-shrink-0 rounded-full"
-                    src={creator.avatar}
-                    alt={creator.name}
-                    width={100}
-                    height={100}
-                    id={creator.id}
-                />
+                {creator.avatar ? (
+                    <Image
+                        unoptimized
+                        className="mx-auto h-32 w-32 flex-shrink-0 rounded-full"
+                        src={creator.avatar}
+                        alt={creator.name}
+                        width={100}
+                        height={100}
+                        id={creator.id}
+                    />
+                ) : (
+                    <div className="mx-auto h-32 w-32 flex-shrink-0 rounded-full bg-[#111927] flex justify-center items-center">
+                        <User width={100} height={100} color="#fff" />
+                    </div>
+                )}
                 <h3 className="mt-6 text-sm font-medium text-gray-900">{creator.name}</h3>
                 <dl className="mt-1 flex flex-col">
                     <dt className="sr-only">Career</dt>
