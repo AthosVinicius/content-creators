@@ -31,7 +31,7 @@ export const Creator = (creator: ICreatorResponse) => {
                 <dl className="mt-1 flex flex-col">
                     <dt className="sr-only">Career</dt>
                     <dd className="text-sm text-gray-500">{creator.career}</dd>
-                    {creator.default_user && (
+                    {creator.default_user && creator.default_user.replace("@", "").length > 0 && (
                         <>
                             <dt className="sr-only">Default User</dt>
                             <dd className="mt-3">
