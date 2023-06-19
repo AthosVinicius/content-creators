@@ -32,7 +32,8 @@ export default async function Home() {
                             </>
                         ) : (
                             <p className="text-xl text-gray-300 text-center w-full bg-gray-800 py-5 rounded-2xl">
-                                Não há nenhum <strong>criador de conteúdo</strong> cadastrado ainda.
+                                Não há nenhum <strong>{process.env.TYPE_REGISTER ?? "criador de conteúdo"}</strong>{" "}
+                                cadastrado ainda.
                             </p>
                         )}
                     </Suspense>
