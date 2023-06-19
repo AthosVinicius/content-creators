@@ -15,7 +15,7 @@ export default async function Home() {
                 <div className="space-y-12">
                     <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center">
-                            Criadores de Conteúdo {process.env.CREATORS_NICHE}
+                            {process.env.CREATORS_NICHE ?? "Criadores de Conteúdo"}
                         </h2>
                         <p className="text-xl text-gray-300 text-center">
                             Se você não está na listagem abaixo, <Link href="/create">clique aqui</Link>.
